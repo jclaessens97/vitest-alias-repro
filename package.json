@@ -1,0 +1,14 @@
+{
+  "name": "@repro/vitest-alias",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.10.0",
+    "pnpm": ">=7.5.0"
+  },
+  "scripts": {
+    "build:api": "pnpm --filter @repro/api build",
+    "dev:api": "pnpm --filter @repro/api dev",
+    "test:api": "pnpm --filter @repro/api test"
+  }
+}
