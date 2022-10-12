@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import { createTRPCProxyClient, httpBatchLink } from '@trpc/client';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import app from '@/app';
+import app from '../../src/app';
 import type { AppRouter } from '@/router';
 
 const trpc = createTRPCProxyClient<AppRouter>({
